@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Para Ajuda</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div id="site">
+        <h1>Formulário</h1>
+
+        <form action="https://www.botecodigital.dev.br/web/processar.php" method="POST">
+
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Ex. Fulano">
+            </div>
+
+            <div>
+                <label for="email">E-mail: </label>
+                <input type="email" required name="email" id="email" placeholder="fulano@gmail.com">
+            </div>
+            <div>
+                <label for="idade">Idade: </label>
+                <input type="number" min="18" max="80" name="idade" id="idade">
+            </div>
+            <div>
+                <label for="cidade">Cidade</label>
+                <select name="cidade" id="cidade">
+                    <option value="URU"selected>Uruguaiana</option>
+                    <option value="ALE">Alegrete</option>
+                    <option value="QUA">Quaraí</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="nascimento">Nascimento: </label>
+                <input type="date" name="nascimento" id="nascimento">
+            </div>
+
+
+            <fieldset>
+                <legend>Horario De Disponibilidade</legend>
+                <input type="radio" name="hora" id="manha" value="Periodo Da Manha">
+                <label for="Manhã">Manhã</label>
+                <br>
+                <input type="radio" name="hora" id="tarde" value="Periodo Da Tarde">
+                <label for="tarde">Tarde</label>
+                <br>
+                <input checked type="radio" name="hora" id="noite" value="Periodo Da Noite">
+                <label for="noite">Noite</label>
+                <br>
+                <input type="radio" name="hora" id="madrugada" value="Periodo Da Madrugada">
+                <label for="madrugada">Madrugada</label>
+            </fieldset>
+
+            <br>
+
+            <div>
+                <label id="msg" for="sobre">Fale Um Pouco Sobre Voce</label>
+                <textarea cols="60" rows="6" name="sobre" id="mensagem"></textarea>
+            </div>
+
+
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+</html>
