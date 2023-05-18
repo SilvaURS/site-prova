@@ -22,8 +22,8 @@ body{
 }
 #topo{
     display: flex;
-    gap: 15px;
     flex-direction: row;
+    gap: 15px;
     align-items: center;
     padding: 20px;
 
@@ -88,8 +88,8 @@ body{
 }
 
 #rodape{
-    padding:10px;
     text-align: center;
+    padding:10px;
     border-top: 2px solid #333;
     margin:10px;
 }
