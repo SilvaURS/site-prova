@@ -5,9 +5,7 @@
     border: none;
     box-sizing: border-box;
 }
-#corpo p{
-    font-size: 17px;
-}
+
 hr{
     border:1px solid #333;
     margin: 10px;
@@ -17,7 +15,7 @@ body{
     background-position: center;
 }
 #site{
-    width: 1024px;
+    width: 1300px;
     background-color: #FFF;   
     margin: 20px auto; 
     border-radius: 15px
@@ -33,10 +31,20 @@ body{
 #topo h2{
     font-size: 40px;
 }
+#corpo{
+    padding: 10px;
+}
 #corpo h1{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5em;
     margin: 20px;
+}
+#corpo p{
+    font-size: 17px;
+}
+#ponte{
+    float: left;
+    margin: 0px 10px 10px 0;
+    width: 600px;
 }
 #formb{
     flex-grow: 1;
@@ -64,8 +72,7 @@ body{
 #menu{
     background: #272727;
     margin: 10px;
-    height: 30px;
-
+    height: 50px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -79,11 +86,7 @@ body{
 #menu a:hover{
     color: rgb(118, 123, 255)
 }
-#ponte{
-    float: left;
-    margin: 0px 10px 10px 0;
-    width: 400px;
-}
+
 #rodape{
     padding:10px;
     text-align: center;
